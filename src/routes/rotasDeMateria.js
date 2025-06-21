@@ -21,7 +21,9 @@ rotasDeMateria.put(
 );
 rotasDeMateria.delete(
   "/:id",
-  capturaErros(controladorDeMateria.remover)
+   capturaErros(controladorDeMateria.deletar)
 );
+capturaErros(controladorDeMateria.remover)
+;
 
 module.exports = rotasDeMateria;
